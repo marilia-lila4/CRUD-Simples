@@ -1,0 +1,26 @@
+<mat-card>
+  <mat-card-title> Excluír a Dívida </mat-card-title>
+  <form>
+    <mat-form-field>
+      <input
+        disabled
+        matInput
+        placeholder="Nome"
+        [value]="debt.name"
+        name="name"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        disabled
+        matInput
+        placeholder="Preço (R$)"
+        [value]="debt.price"
+        name="price"
+      />
+    </mat-form-field>
+  </form>
+  <button mat-raised-button (click)="deleteDebt()" color="warn">Excluir</button>
+
+  <button mat-raised-button (click)="cancel()">Cancelar</button>
+</mat-card>
